@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "cover_image": "https://ibb.co/2566WRQ",
+    "title": "Gitanjali",
+    "author": "Rabindranath Tagore",
+    "author_image": "https://ibb.co/y6Mzfw2",
+    "posted_date": "August 4, 1910",
+    "reading_time": 1,
+    "hashtag": "#poetry"
+  },
+  {
+    "id": 2,
+    "cover_image": "https://ibb.co/KzdCgkb",
+    "title": "সোনার তরী ",
+    "author_image": "https://ibb.co/y6Mzfw2",
+    "author": "Rabindranath Tagore",
+    "posted_date": "1894",
+    "reading_time": 1,
+    "hashtag": "#Allegorical poetry."
+  },
+  {
+    "id": 3,
+    "cover_image": "https://ibb.co/GWt67gH",
+    "author": "Sorot Condro",
+    "author_image": "https://ibb.co/LvXdMDB",
+    "posted_date": "1917",
+    "reading_time": 1,
+    "hashtag": "#story"
+  }
+]
