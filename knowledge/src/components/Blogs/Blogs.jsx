@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Blog from "../Blog/Blog";
 
 
-const Blogs = ({ handleAddToBookmark, handleMarkAsRead }) => {
+const Blogs = ({ handleAddToBookmarks, handleMarkAsRead }) => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
@@ -11,7 +11,6 @@ const Blogs = ({ handleAddToBookmark, handleMarkAsRead }) => {
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [])
-
     return (
         <div className="md:w-2/3">
             <h1 className="text-4xl">Blogs: {blogs.length}</h1>
@@ -19,7 +18,7 @@ const Blogs = ({ handleAddToBookmark, handleMarkAsRead }) => {
                 blogs.map(blog => <Blog
                     key={blog.id}
                     blog={blog}
-                    handleAddToBookmark={handleAddToBookmark}
+                    handleAddToBookmark={handleAddToBookmarks}
                     handleMarkAsRead={handleMarkAsRead}
                 ></Blog>)
             }
@@ -28,7 +27,7 @@ const Blogs = ({ handleAddToBookmark, handleMarkAsRead }) => {
 };
 
 Blogs.propTypes = {
-    handleAddToBookmark: PropTypes.func,
+    handleAddToBookmarks: PropTypes.func,
     handleMarkAsRead: PropTypes.func
 }
 
